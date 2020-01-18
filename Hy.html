@@ -1,0 +1,121 @@
+
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8"/>
+
+  <title>HybrOtec</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script src="Load.js"></script>
+
+ 	<link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet'>
+ 	<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href="BO.css" rel="stylesheet">
+ 	
+ 	<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+  <script src="movingEye.js"></script>
+
+ <style>
+ </style>
+ </head>
+ <body>
+
+<div class="Logo">
+   <div id='eye-holder' class="eye"></div>      
+    <a href="About_Try.html"><img src="Pics/Eye.png"  width="120" height="120" alt=""></a>             
+</div>
+
+
+<div class="se-pre-con"></div>
+ 	 <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"> 
+  	<div class="mainText">Hybrid Suit</div>
+    <img src="Pics/HY_1.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">A suit designed for CBRN soldiers which can adapt accordingly, to reduce thermal burden and increase comfort.</div>
+  </div>
+
+  <div class="mySlides fade">
+  	<div class="mainText">The Problem</div>
+   <img src="Pics/HY_2.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">Current CBRN suits offer slower adaptability to harmful gases, risking the soldiers of thermal burden. Thus, the idea of a switchable suit. </div>
+  </div>
+
+  <div class="mySlides fade">  
+  	<div class="mainText">The Concept</div>
+    <img src="Pics/HY_3.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">was to have a switchable cooling system that would cool the hottest areas of the body via a pressurized fan, blowing air around the suit.</div>
+  </div>
+
+  <div class="mySlides fade">  
+  	<div class="mainText">Exploration Web</div>
+    <img src="Pics/HY_4.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">Many factors were explored to validate the feasibility of the ventilator system,including the pathways, ventilator and sleeves.</div>
+  </div>
+
+  <div class="mySlides fade"> 
+    <div class="mainText">Testing</div>
+   <img src="Pics/HY_5.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">To understand the flow of air, prototypes were tested under pressure mats to check the most compressed areas on the body.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="mainText">Pathways</div>
+    <img src="Pics/HY_6.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">The resulting design was made out of foam and patched up within the suit in different parts to channel air throughout the body.</div>
+  </div>
+
+  <div class="mySlides fade">  
+    <div class="mainText">Ventilator design</div>
+    <img src="Pics/HY_7.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">The Ventilator system was prototyped to embody air intake functions and also to alert the user on exposure to gases.</div>
+  </div>
+
+  <div class="mySlides fade">  
+    <div class="mainText">Final Design</div>
+    <img src="Pics/HY_8.jpg" alt="example image" style=" width:1080px;padding-left:120px;">
+    <div class="text">The knob controls the air intake in the pressure system, providing different levels of ventilation for different missions.</div>
+  </div>
+
+  
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+} 
+</script>
+
+ </body>
+ </html>

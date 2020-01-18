@@ -1,0 +1,113 @@
+
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8"/>
+
+  <title>WT</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script src="Load.js"></script>
+  
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+  <script src="movingEye.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href="BO.css" rel="stylesheet">
+ 	
+  
+ <style>
+ </style>
+ </head>
+ <body>
+
+<div class="Logo">
+   <div id='eye-holder' class="eye"></div>      
+    <a href="About_Try.html"><img src="Pics/Eye.png"  width="120" height="120" alt=""></a>             
+</div>
+
+
+  <div class="se-pre-con"></div>
+ 	 <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"> 
+  	<div class="mainText">Storytelling Refined</div>
+    <img src="Pics/WT_1.jpg" alt="" style="width:1080px;padding-left:120px;">
+    <div class="text">Designing the experience and framework for interactive storytelling and presentations via objects on the White table.</div>
+  </div>
+
+  <div class="mySlides fade">
+  	<div class="mainText">Current WhiteTable</div>
+   <iframe width="1080" height="607" src="https://www.youtube.com/embed/RbDtHEd8lcg" style="padding-left: 120px"></iframe>
+    <div class="text">The goal was to improve the overall experience of the WhiteTable to tell stories and improving the underlying technology. </div>
+  </div>
+
+
+  <div class="mySlides fade">  
+  	<div class="mainText">Exploring Interactions</div>
+     <iframe src="https://player.vimeo.com/video/245160986" width="1080" height="607" style="padding-left: 120px"></iframe>
+    <div class="text">A lot of trials and tests were done to find seamless interactions with the object and content to present.</div>
+  </div>
+
+
+  <div class="mySlides fade">  
+  	<div class="mainText">Object_Tracking (ML)</div>
+    <img src="Pics/WT_2.png" alt="" style="width:1080px;padding-left:120px;">
+    <div class="text">To have a scalable solution, I made a camera detection system to track objects real-time, via ML(using Python) .</div>
+  </div>
+
+  <div class="mySlides fade">  
+  	<div class="mainText">Tracking Via Depth</div>
+    <iframe src="https://player.vimeo.com/video/266455766" width="1080" height="607" style="padding-left: 120px"></iframe>
+    <div class="text">To increase robustness and reliability , a depth tracking system (SR300) was programmed (in C++) to cluster objects real-time.</div>
+  </div>
+
+
+  <div class="mySlides fade">  
+  	<div class="mainText">Final Prototype</div>
+    <iframe src="https://player.vimeo.com/video/268555005" width="1080" height="607" style="padding-left: 120px"></iframe>
+    <div class="text">Final Prototype showing depth tracking of the object combined with projection mapping.</div>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+
+<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+} 
+</script>
+
+ </body>
+ </html>

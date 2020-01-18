@@ -1,0 +1,75 @@
+
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8"/>
+
+  <title>Lumenis</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script src="Load.js"></script>
+  
+  <link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href="BO.css" rel="stylesheet">
+ 	
+ 	<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+  <script src="movingEye.js"></script>
+
+ <style>
+ </style>
+ </head>
+ <body>
+
+<div class="Logo">
+   <div id='eye-holder' class="eye"></div>      
+    <a href="About_Try.html"><img src="Pics/Eye.png"  width="120" height="120" alt=""></a>             
+</div>
+
+
+  <div class="se-pre-con"></div>
+ 	 <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+  	<div class="mainText">Tattoo Removal</div>
+    <iframe src="https://player.vimeo.com/video/266641104" width="1080" height="607" style="padding-left: 120px"></iframe>
+    <div class="text">I coded the game in openframeworks (C++) using the kinect sensor to detect the hand and other gestures :D</div>
+  </div>
+
+
+</div>
+
+
+
+<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+} 
+</script>
+
+ </body>
+ </html>

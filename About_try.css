@@ -1,0 +1,166 @@
+body{background-color: white}
+
+/*Outside Division Boxes*/
+.WorkBar{float:right;width:30%;}
+
+.MainContent{float:none;width:100%; height:800px;}
+
+.Logo{float:left; width:8%;}
+
+/*Stops Here*/
+
+/*Animations Transitions*/
+.animate-right{position:relative;animation:animateright 3s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.animate-left{position:relative;animation:animateleft 2s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.animate-opacity{animation:opac 3s}@keyframes opac{from{opacity:0} to{opacity:1}}
+/*Stops here*/
+
+/*WorkBar CSS*/
+.sidenav{
+	position: fixed;    
+	top:50px;
+	right:0;
+	height: 650px;
+    width: 350px;
+    background-color: #f7c419;
+    z-index:-1;
+}
+
+
+.projects{
+	position: fixed;
+	top: 35;
+	right:150;
+	width: 320px;
+	height:100%;
+    display: block;
+}
+
+/*Image Hover CSS*/
+.links li {
+	color:transparent;	
+}
+
+.links li a {
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Rakkas';
+    font-size: 70px;
+    color: #9217a3;
+    text-shadow: 3px 3px #eb3b2e;
+}
+
+.links li a span  {
+	position:absolute;
+	right:-130px;
+	top: -999em;
+	height: 650px;
+    width: 330px;
+	z-index:-1;
+}
+
+/*Links Highlight*/
+.links li a:hover, .links li.over a {
+	
+	color:transparent;
+	visibility:visible;
+}
+/*Image hover location*/
+.links li a:hover span, .links li.over a span { top:15px; }
+
+
+
+/*Ends here*/
+
+/*Logo CSS*/
+
+/*P5 Content*/
+.eye{
+	position: fixed;
+	top:278;
+	left:0;
+	z-index: -1;
+}
+
+.Logo a{
+	position:fixed;
+	top:330;
+	left:20;
+}
+
+/*Ends Here/*
+
+
+
+/*MainContent*/
+
+
+.Intro
+{
+	position: fixed;
+	top: 260;
+	left: 180;
+	right:450;
+}
+
+/*.Intro h2{
+	font-family: 'Karla';
+	font-size: 25px;
+    text-align: left;
+    color: #9217a3;
+    text-shadow: 1.5px 1.5px #eb3b2e;
+}*/
+
+
+.Intro p{	
+	font-size: 20px;
+    font-family: 'Allerta Stencil';
+    /*font-weight: bold;
+	/*padding-right: 600px;*/
+	text-align: left;
+    color: black;
+    line-height: 40px;
+}
+
+.Intro mark{
+	background-color: transparent;
+    color: #eb3b2e;
+}
+
+.Git {
+	position: fixed;
+	top: 440;
+	left: 190;
+	right:450;
+}
+
+.Insta {
+	position: fixed;
+	top: 440;
+	left: 260;
+	right:450;
+}
+
+.LinkedIn {
+	position: fixed;
+	top: 440;
+	left: 330;
+	right:450;
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("Pics/Blank.jpeg") center no-repeat #fff;
+}
